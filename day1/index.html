@@ -1,237 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabari Biju | Portfolio</title>
-    <meta
-      name="description"
-      content="Personal portfolio website for Sabari Biju, built from the uploaded resume."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="top-nav container">
-        <a href="#home" class="brand">Sabari Biju</a>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#certificates">Certificates</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabari Biju | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Sabari Biju — aspiring software engineer, data science enthusiast, and problem solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-      <div class="hero-content container" id="home">
-        <div>
-          <p class="eyebrow">Aspiring Software Engineer • Data Science Enthusiast</p>
-          <h1>Hi, I’m Sabari Biju.</h1>
-          <p class="lead">
-            I’m passionate about machine learning, full-stack development, and building practical solutions with clean architecture and strong problem-solving.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="SABARI BIJU - Resume oc.pdf" target="_blank" rel="noreferrer">View Resume</a>
-            <a class="btn btn-secondary" href="#projects">Explore Projects</a>
-          </div>
+  <div id="loader"><div class="loader-spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">SB<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Aspiring Software Engineer &bull; Data Science Enthusiast</span>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Sabari Biju</span></h1>
+        <p class="hero-subtitle">I build intelligent systems and clean full-stack applications with a passion for machine learning, spec-driven development, and thoughtful architecture.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="SABARI BIJU - Resume oc.pdf" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            Resume
+          </a>
+          <a class="btn btn-secondary" href="#projects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            View Work
+          </a>
         </div>
-        <div class="hero-card">
-          <div class="profile-photo">
-            <img src="Sathu.jpg" alt="Photo of Sabari Biju" />
-          </div>
-          <h3>Quick Snapshot</h3>
-          <ul>
-            <li>Python, ML, OpenSpec, C, SQL, Java</li>
-            <li>CGPA 8.22 at IIT Madras BS Data Science</li>
-            <li>CGPA 8.75 at Govt. Model Engineering College</li>
-            <li>Scholarship recipient and workshop participant</li>
-          </ul>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Projects</span></div>
+          <div class="hero-stat"><span class="stat-num" data-target="14">0</span><span class="stat-label">Certifications</span></div>
+          <div class="hero-stat"><span class="stat-num" data-target="6">0</span><span class="stat-label">Skills</span></div>
         </div>
       </div>
-    </header>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <img src="Sathu.jpg" alt="Sabari Biju" class="profile-photo" />
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-row"><span class="hero-card-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></span><span>Sabari Biju</span></div>
+          <div class="hero-card-row"><span class="hero-card-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span>IIT Madras &amp; MEC</span></div>
+          <div class="hero-card-row"><span class="hero-card-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span>Python &bull; ML &bull; Full-Stack</span></div>
+          <div class="hero-card-row"><span class="hero-card-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>Kerala, India</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main>
-      <section class="section container" id="about">
+  <main>
+    <section class="section reveal" id="about">
+      <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">About Me</p>
+          <span class="eyebrow">About Me</span>
           <h2>Building thoughtful tech with curiosity and discipline.</h2>
         </div>
         <div class="about-grid">
-          <p>
-            I am a proactive learner with experience in machine learning, web development, and collaborative software projects. My work spans predictive modeling, full-stack applications, and hands-on exploration of modern development tools such as OpenSpec and Playwright.
-          </p>
-          <div class="info-card">
-            <h3>Personal Details</h3>
-            <ul>
-              <li><strong>DOB:</strong> 05/07/2005</li>
-              <li><strong>Phone:</strong> +91 7025399056</li>
-              <li><strong>Email:</strong> sabaribiju.mec@gmail.com</li>
-              <li><strong>Profiles:</strong> LinkedIn | GitHub</li>
-            </ul>
+          <div class="about-text">
+            <p>I am a proactive learner with experience in machine learning, web development, and collaborative software projects. My work spans predictive modeling, full-stack applications, and hands-on exploration of modern development tools such as OpenSpec and Playwright.</p>
+            <div class="about-details">
+              <div class="about-detail"><strong>DOB:</strong> 05/07/2005</div>
+              <div class="about-detail"><strong>Phone:</strong> +91 7025399056</div>
+              <div class="about-detail"><strong>Email:</strong> <a href="mailto:sabaribiju.mec@gmail.com">sabaribiju.mec@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg></span>
+              <span class="highlight-value">BS Data Science</span>
+              <span class="highlight-label">IIT Madras &bull; CGPA 8.22</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg></span>
+              <span class="highlight-value">B.Tech CSE</span>
+              <span class="highlight-label">MEC &bull; CGPA 8.75</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></span>
+              <span class="highlight-value">Scholarship Recipient</span>
+              <span class="highlight-label">RFUG &amp; HSBC Scholar</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <span class="highlight-value">Active Learner</span>
+              <span class="highlight-label">Workshops &amp; Externships</span>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section section-alt" id="skills">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Skills & Interests</p>
-            <h2>Technical depth paired with strong communication.</h2>
-          </div>
-          <div class="card-grid">
-            <article class="card">
-              <h3>Technical Skills</h3>
-              <p>Python, Machine Learning, OpenSpec, C, SQL, Bash Scripting, Java, HTML, CSS</p>
-            </article>
-            <article class="card">
-              <h3>Soft Skills</h3>
-              <p>Problem Solving, Time Management, Leadership, Communication, Team Work</p>
-            </article>
-            <article class="card">
-              <h3>Interests</h3>
-              <p>Machine Learning, Deep Learning, Spec-Driven Development</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section container" id="projects">
+    <section class="section section-alt reveal" id="skills">
+      <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
+          <span class="eyebrow">Skills &amp; Interests</span>
+          <h2>Technical depth paired with strong communication.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">Celery</span>
+              <span class="skill-tag">OpenSpec</span>
+              <span class="skill-tag">Playwright</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag-soft">Problem Solving</span>
+              <span class="skill-tag skill-tag-soft">Leadership</span>
+              <span class="skill-tag skill-tag-soft">Team Work</span>
+              <span class="skill-tag skill-tag-soft">Communication</span>
+              <span class="skill-tag skill-tag-soft">Time Management</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Interests</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag-interest">Machine Learning</span>
+              <span class="skill-tag skill-tag-interest">Deep Learning</span>
+              <span class="skill-tag skill-tag-interest">Spec-Driven Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Projects</span>
           <h2>Selected work that reflects my range and growth.</h2>
         </div>
-        <div class="card-grid">
-          <article class="card project-card">
-            <h3>Comment Category Prediction</h3>
-            <p class="meta">Team Size: 1 • Programmer • 2 Months</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <div>
+                <h3>Comment Category Prediction</h3>
+                <span class="project-meta">Solo &bull; 2 Months</span>
+              </div>
+            </div>
             <p>Built machine learning models for comment classification using Python, Scikit-learn, NumPy, Pandas, and Matplotlib. Achieved an F1 score above 0.81 and defended the project before industry professionals.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">NumPy</span>
+              <span class="project-tag">Pandas</span>
+            </div>
           </article>
-          <article class="card project-card">
-            <h3>StockMaster</h3>
-            <p class="meta">Team Size: 3 • Team Lead • 2 Months</p>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <div>
+                <h3>StockMaster</h3>
+                <span class="project-meta">Team Lead &bull; 2 Months</span>
+              </div>
+            </div>
             <p>Led a collaborative deep learning project for stock prediction using PyTorch and Scikit-learn. Focused on research, implementation, evaluation, and on-time delivery for reports and demos.</p>
+            <div class="project-tags">
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">Deep Learning</span>
+            </div>
           </article>
-          <article class="card project-card">
-            <h3>QuickPark</h3>
-            <p class="meta">Team Size: 1 • Programmer • 2 Months</p>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <div>
+                <h3>QuickPark</h3>
+                <span class="project-meta">Solo &bull; 2 Months</span>
+              </div>
+            </div>
             <p>Developed a full-stack parking management web application with Python, Flask, Vue.js, Redis, Celery, and MailHog.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">Redis</span>
+              <span class="project-tag">Celery</span>
+            </div>
           </article>
-          <article class="card project-card">
-            <h3>Quiz Master</h3>
-            <p class="meta">Team Size: 4 • Team Lead • 2 Months</p>
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <div>
+                <h3>Quiz Master</h3>
+                <span class="project-meta">Team Lead &bull; 2 Months</span>
+              </div>
+            </div>
             <p>Led a team to create a full-stack quiz management platform using Flask, SQLite, HTML, and CSS while designing the database and presenting the architecture.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">SQLite</span>
+              <span class="project-tag">HTML/CSS</span>
+            </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section section-alt" id="education">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Education</p>
-            <h2>A strong academic foundation across engineering and data science.</h2>
-          </div>
-          <div class="timeline">
-            <div class="timeline-item">
+    <section class="section section-alt reveal" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Education</span>
+          <h2>A strong academic foundation across engineering and data science.</h2>
+        </div>
+        <div class="education-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2023 &ndash; 2027</div>
               <h3>Indian Institute of Technology, Madras</h3>
-              <p>BS in Data Science and Applications • CGPA 8.22 • 2027</p>
+              <p>BS in Data Science and Applications</p>
+              <span class="edu-gpa">CGPA 8.22</span>
             </div>
-            <div class="timeline-item">
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2023 &ndash; 2027</div>
               <h3>Govt. Model Engineering College</h3>
-              <p>B.Tech in Computer Science Engineering • CGPA 8.73 • 2027</p>
+              <p>B.Tech in Computer Science Engineering</p>
+              <span class="edu-gpa">CGPA 8.75</span>
             </div>
-            <div class="timeline-item">
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2023</div>
               <h3>Loyola School Sreekariyam</h3>
-              <p>CBSE 12th • 93.8% • 2023</p>
+              <p>CBSE Class 12</p>
+              <span class="edu-gpa">93.8%</span>
             </div>
-            <div class="timeline-item">
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2021</div>
               <h3>The Oxford School</h3>
-              <p>CBSE 10th • 95.3% • 2021</p>
+              <p>CBSE Class 10</p>
+              <span class="edu-gpa">95.3%</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section container">
+    <section class="section reveal" id="achievements">
+      <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Certifications & Achievements</p>
+          <span class="eyebrow">Certifications &amp; Achievements</span>
           <h2>Recognized for dedication, learning, and initiative.</h2>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Certifications</h3>
-            <ul class="bullet-list">
-              <li>Diploma in Programming from IIT Madras</li>
-              <li>Foundation in Programming and Data Science from IIT Madras</li>
-              <li>Introduction to Cloud Computing from Simplilearn</li>
-              <li>SQL (Intermediate), Problem Solving (Basic), Python (Basic) from HackerRank</li>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <h3><span class="achieve-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></span>Certifications</h3>
+            <ul>
+              <li>Diploma in Programming &mdash; IIT Madras</li>
+              <li>Foundation in Programming and Data Science &mdash; IIT Madras</li>
+              <li>Introduction to Cloud Computing &mdash; Simplilearn</li>
+              <li>SQL (Intermediate) &mdash; HackerRank</li>
+              <li>Problem Solving (Basic) &mdash; HackerRank</li>
+              <li>Python (Basic) &mdash; HackerRank</li>
             </ul>
-          </article>
-          <article class="card">
-            <h3>Achievements & Activities</h3>
-            <ul class="bullet-list">
+          </div>
+          <div class="achievement-card">
+            <h3><span class="achieve-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>Achievements &amp; Activities</h3>
+            <ul>
               <li>RFUG Scholarship recipient</li>
               <li>HSBC Scholarship recipient</li>
               <li>Extern at InApp through LOBA Explore</li>
               <li>Deployed an art portfolio website using Vercel</li>
               <li>Participated in workshops on GitHub, Playwright, OpenSpec, and Word2Vec</li>
             </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="certificates">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Certificates</p>
-            <h2>Verified learning and professional development.</h2>
-          </div>
-          <div class="certificate-grid">
-            <article class="card certificate-card">
-              <h3>Academic & Skill Certificates</h3>
-              <ul class="certificate-list">
-                <li><a href="Certificates/diploma_programming.pdf" target="_blank">Diploma in Programming</a></li>
-                <li><a href="Certificates/foundation_prog_ds.pdf" target="_blank">Foundation in Programming and Data Science</a></li>
-                <li><a href="Certificates/Simplilearn Cloud Computing.pdf" target="_blank">Introduction to Cloud Computing</a></li>
-                <li><a href="Certificates/sql_intermediate certificate.pdf" target="_blank">SQL Intermediate</a></li>
-                <li><a href="Certificates/problem_solving_basic certificate.pdf" target="_blank">Problem Solving Basic</a></li>
-                <li><a href="Certificates/python_basic certificate.pdf" target="_blank">Python Basic</a></li>
-                <li><a href="Certificates/EXTERNSHIP PROGRAM CERTIFICATE.pdf" target="_blank">Externship Program Certificate</a></li>
-              </ul>
-            </article>
-            <article class="card certificate-card">
-              <h3>Workshop & Special Program Certificates</h3>
-              <ul class="certificate-list">
-                <li><a href="Certificates/23F2000239_BYOT_certificate.pdf" target="_blank">BYOT Certificate</a></li>
-                <li><a href="Certificates/23F2000239_CCC_certificate.pdf" target="_blank">CCC Certificate</a></li>
-                <li><a href="Certificates/23f2000239_GCP_certificate.pdf" target="_blank">GCP Certificate</a></li>
-                <li><a href="Certificates/23F2000239_MIP_certificate.pdf" target="_blank">MIP Certificate</a></li>
-                <li><a href="Certificates/23F2000239_PLU_certificate.pdf" target="_blank">PLU Certificate</a></li>
-                <li><a href="Certificates/23f2000239_SPD_certificate.pdf" target="_blank">SPD Certificate</a></li>
-                <li><a href="Certificates/23f2000239_TAWAP_certificate.pdf" target="_blank">TAWAP Certificate</a></li>
-              </ul>
-            </article>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer" id="contact">
-      <div class="container footer-content">
-        <p>© <span id="year"></span> Sabari Biju. Crafted from the uploaded resume.</p>
-        <a href="mailto:sabaribiju.mec@gmail.com">sabaribiju.mec@gmail.com</a>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="section section-alt reveal" id="certificates">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Certificate Gallery</span>
+          <h2>Verified learning and professional development.</h2>
+        </div>
+        <div class="cert-grid">
+          <a href="Certificates/diploma_programming.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Diploma in Programming">
+            <img src="Certificates/previews/diploma_programming.png" alt="Diploma in Programming" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Diploma in Programming</span>
+            </div>
+          </a>
+          <a href="Certificates/foundation_prog_ds.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Foundation in Programming and Data Science">
+            <img src="Certificates/previews/foundation_prog_ds.png" alt="Foundation in Programming and Data Science" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Foundation in Programming and Data Science</span>
+            </div>
+          </a>
+          <a href="Certificates/Simplilearn Cloud Computing.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Cloud Computing">
+            <img src="Certificates/previews/Simplilearn Cloud Computing.png" alt="Cloud Computing" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Cloud Computing</span>
+            </div>
+          </a>
+          <a href="Certificates/sql_intermediate certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="SQL Intermediate">
+            <img src="Certificates/previews/sql_intermediate certificate.png" alt="SQL Intermediate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>SQL Intermediate</span>
+            </div>
+          </a>
+          <a href="Certificates/problem_solving_basic certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Problem Solving Basic">
+            <img src="Certificates/previews/problem_solving_basic certificate.png" alt="Problem Solving Basic" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Problem Solving Basic</span>
+            </div>
+          </a>
+          <a href="Certificates/python_basic certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Python Basic">
+            <img src="Certificates/previews/python_basic certificate.png" alt="Python Basic" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Python Basic</span>
+            </div>
+          </a>
+          <a href="Certificates/EXTERNSHIP PROGRAM CERTIFICATE.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="Externship Program">
+            <img src="Certificates/previews/EXTERNSHIP PROGRAM CERTIFICATE.png" alt="Externship Program" loading="lazy" />
+            <div class="cert-overlay">
+              <span>Externship Program</span>
+            </div>
+          </a>
+          <a href="Certificates/23F2000239_BYOT_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="BYOT Certificate">
+            <img src="Certificates/previews/23F2000239_BYOT_certificate.png" alt="BYOT Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>BYOT Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23F2000239_CCC_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="CCC Certificate">
+            <img src="Certificates/previews/23F2000239_CCC_certificate.png" alt="CCC Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>CCC Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23f2000239_GCP_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="GCP Certificate">
+            <img src="Certificates/previews/23f2000239_GCP_certificate.png" alt="GCP Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>GCP Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23F2000239_MIP_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="MIP Certificate">
+            <img src="Certificates/previews/23F2000239_MIP_certificate.png" alt="MIP Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>MIP Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23F2000239_PLU_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="PLU Certificate">
+            <img src="Certificates/previews/23F2000239_PLU_certificate.png" alt="PLU Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>PLU Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23f2000239_SPD_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="SPD Certificate">
+            <img src="Certificates/previews/23f2000239_SPD_certificate.png" alt="SPD Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>SPD Certificate</span>
+            </div>
+          </a>
+          <a href="Certificates/23f2000239_TAWAP_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item" data-title="TAWAP Certificate">
+            <img src="Certificates/previews/23f2000239_TAWAP_certificate.png" alt="TAWAP Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <span>TAWAP Certificate</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Let's connect and build something great.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:sabaribiju.mec@gmail.com">sabaribiju.mec@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+917025399056">+91 7025399056</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span>Kerala, India</span>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="#" class="social-link" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a href="#" class="social-link" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required aria-label="Your Name" />
+              <input type="email" placeholder="Your Email" required aria-label="Your Email" />
+            </div>
+            <input type="text" placeholder="Subject" required aria-label="Subject" />
+            <textarea placeholder="Message" rows="5" required aria-label="Message"></textarea>
+            <button type="submit" class="btn btn-primary form-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Sabari Biju. Built with care.</p>
+      <a href="#home" class="back-to-top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
